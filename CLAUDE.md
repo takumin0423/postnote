@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 ## プロジェクト概要
 
 PostNoteは「読んだ投稿を管理し、得た学びをノートとして共有できるサービス」です。現在開発中の段階です。
