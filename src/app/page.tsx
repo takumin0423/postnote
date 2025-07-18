@@ -6,6 +6,7 @@ import {
   TrendingUp,
   Users,
 } from 'lucide-react';
+import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -35,9 +36,11 @@ export default function Home() {
                 <Input placeholder="記録を検索..." className="pl-8" />
               </div>
             </div>
-            <Button>
-              <PlusCircle className="mr-2 h-4 w-4" />
-              新規記録
+            <Button asChild>
+              <Link href="/notes/new">
+                <PlusCircle className="mr-2 h-4 w-4" />
+                新規記録
+              </Link>
             </Button>
           </div>
         </div>
@@ -139,9 +142,11 @@ export default function Home() {
                       <p className="text-sm text-muted-foreground mb-4">
                         読んだ投稿や記事から得た学びを記録してみましょう
                       </p>
-                      <Button>
-                        <PlusCircle className="mr-2 h-4 w-4" />
-                        最初の記録を作成
+                      <Button asChild>
+                        <Link href="/notes/new">
+                          <PlusCircle className="mr-2 h-4 w-4" />
+                          最初の記録を作成
+                        </Link>
                       </Button>
                     </CardContent>
                   </Card>
